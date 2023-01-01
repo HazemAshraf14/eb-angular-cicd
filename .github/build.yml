@@ -4,7 +4,7 @@ on:
   # this will trigger workflow whenever a change is pushed to main branch
   push:
     branches:
-      - master
+      - main
 jobs:
   sonarcloud:
     name: SonarCloud
@@ -18,5 +18,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-  
   
