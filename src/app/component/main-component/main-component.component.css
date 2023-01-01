@@ -1,0 +1,13 @@
+#logoutBtn {
+    color:white;
+    background: rgba(74,139,213,1);
+    border-radius: 24px;
+    float: right;
+    width:13%;
+    margin-right: 5%;
+    border-radius: 5px
+}
+
+#logoImg {
+    width: 100%;
+}

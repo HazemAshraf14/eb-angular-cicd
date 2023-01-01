@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 5px;
+}
+
+.form-style-8{
+    width: 70%;
+    max-width: 85%;
+     min-width: 700px; 
+    padding: 15px;
+    background: #fcfcfc;
+    margin: 0px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+
+#error_message{
+    color: red;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    [class*="form-style-8"] {
+        margin: 0px;
+        width: 90%;
+        padding: 5px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.22);
+        -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.22);
+        -webkit-box-shadow:  0px 0px 0px rgba(0, 0, 0, 0.22);
+        margin: 0px auto;
+    }
+
+    body {
+        background-color: #fcfcfc;
+    }
+}
