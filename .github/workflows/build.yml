@@ -35,10 +35,17 @@ jobs:
     - name: Building application
       run: npm run build
 
-    - name: Generate deployment package
-      run: |
-        cd ./output
-        zip deploy.zip *
+    # - name: Generate deployment package
+    #   run: |
+    #     cd ./output
+    #     zip deploy.zip *
+
+    - name: Install zip
+      uses: montudor/action-zip@v1
+
+    - name: Zip output
+      run: zip -qq -r deploy.zip dist Dockerfile Dockerrun.aws.json custom-nginx-file.conf
+      working-directory: output
 
     - name: Upload zip file
       # We upload so we can re-use same jar in next job.
@@ -47,7 +54,7 @@ jobs:
         #Name of artifact can be anything
         name: artifact
         #Relative path to jar file
-        path: deploy.zip
+        path: ./output/deploy.zip
       
   # sonarcloud:
   #   needs: build
