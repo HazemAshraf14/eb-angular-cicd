@@ -1,0 +1,13 @@
+
+<div>
+
+
+          <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>What's your note?</mat-label>
+            <input matInput [(ngModel)]="sessionNote">
+          </mat-form-field>
+          <hr />
+
+    <button class="delete" (click)="confirm()"  mat-raised-button >Save</button> &nbsp;
+    <button (click)="cancel()" mat-raised-button color="basic">Cancel</button>
+</div>

@@ -1,0 +1,42 @@
+#zAccelerometerContainer {
+    /* height: 400px;
+    min-width: 310px; */
+    clear: right;
+    /* height: 100%;
+    width: 100%; */
+  }
+
+  .loading-indicator {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .export-button-style {
+    width: 15% ;
+    font-size: 12px;
+    color: white;
+    border-radius: 5%;
+    background: rgba(74,139,213,1);
+    border-color: white !important;
+    float: right;
+    margin-top: 3%;
+}
+
+.export-button-downloading-style {
+  width: 15% ;
+  font-size: 12px;
+  color: rgb(24, 24, 24);
+  border-radius: 5%;
+  background: rgb(221, 221, 221);
+  border-color: white !important;
+  float: right;
+  margin-top: 3%;
+}

@@ -1,0 +1,182 @@
+table {
+    width: 95% !important;
+    margin: 0 auto;
+}
+
+.icon {
+    font-size: 1.8em;
+    color: rgba(74,139,213,1);
+}
+
+.button {
+    min-width: 1px;
+}
+
+.table-header {
+    width: 15%;
+}
+
+
+
+#overallStatusHeader {
+    width: 12% !important;
+    padding-left: 7px;
+}
+
+.mat-header-cell {
+    border-color: rgb(0, 0, 0);
+}
+
+td.mat-cell {
+    border-color: rgb(0, 0, 0);
+}
+
+td {
+    /* left: 28px; */
+    top: 97px;
+    width: 40px;
+    white-space: nowrap;
+    /* text-align: left; */
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(33, 47, 81, 1);
+    text-transform: capitalize;
+}
+
+th {
+    left: 13px;
+    top: 0px;
+    width: 65px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(33, 47, 81, 1);
+    text-transform: capitalize;
+}
+
+#searchBtnContainer {
+    width: 50%;
+    border-color: rgba(74,139,213,1);
+    border-radius: 5px;
+    height: 23px;
+    border-style: solid;
+    opacity: 0.6;
+    float: left;
+    margin-bottom: 3%;
+}
+
+
+.btnSearch {
+    border-style: none;
+    width: 90%;
+    outline: none !important;
+}
+
+.mat-paginator {
+    display: flex;
+    justify-content: center;
+}
+
+.autorenew-button-style {
+    color: white;
+    border-radius: 20%;
+    background: rgba(74,139,213,1);
+    border-color: white !important;
+    float: right;
+}
+
+#patientInfoTable {
+    background: transparent !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 20%!important;
+    border-radius: 1% !important;
+}
+
+/* Absolute Center Spinner */
+.loading-indicator {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Transparent Overlay */
+.loading-indicator:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
+.loading-indicator ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: rgba(74,139,213,1) !important;
+}
+
+#graphsContainer {
+    width: 70% !important;
+}
+
+.sensorTableContainer {
+    width: 30% !important;
+}
+
+/* .mat-row:nth-child(even){
+    background-color: red;
+} */
+        
+.mat-row:nth-child(odd){
+    background-color: rgb(238, 238, 238);
+}
+
+#tableContent {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+#logoutBtn {
+    color:white;
+    background: rgba(74,139,213,1);
+    border-radius: 24px;
+    float: right;
+    width:13%;
+    margin-right: 5%;
+    border-radius: 5px
+}
+
+#logoImg {
+    width: 100%;
+}
+
+#showGraphBtn{
+    color:white;
+    background: rgba(74,139,213,1);
+    border-radius: 5px;
+    font-weight:400;
+    font-size: 12px;
+}
+
+
+#deleteSessionsBtn{
+    color:white;
+    background: rgba(74,139,213,1);
+    border-radius: 5px;
+    font-weight:400;
+    font-size: 12px;
+}

@@ -1,0 +1,11 @@
+
+<span>{{message}}</span>
+
+
+<hr />
+
+<div class="confirm-container">
+
+    <button [ngClass]="action == 'Delete' ? 'delete' : 'create'" (click)="confirm()"  mat-raised-button >{{action}}</button> &nbsp;
+    <button (click)="cancel()" mat-raised-button color="basic">Cancel</button>
+</div>

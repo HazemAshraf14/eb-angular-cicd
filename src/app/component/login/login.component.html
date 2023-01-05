@@ -1,0 +1,24 @@
+<div id="loginContainer">
+<div>
+    <img id="logoImg" src="assets/img/logo.png">
+</div>
+<div id="part2">
+    <div id="signIn">
+        <span>Welcome back</span>
+    </div>
+    <div class="login-form-fields">
+        <span [hidden]="!isInvalidCredentials" id="error">Invalid Credentials</span>
+        <mat-form-field>
+            <input matInput type="text" placeholder="Username" [formControl]="usernameControl">
+            <mat-error *ngIf="usernameControl.invalid">Required!</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" placeholder="Password" [formControl]="passwordControl">
+            <mat-error *ngIf="passwordControl.invalid">Required!</mat-error>
+        </mat-form-field>
+    </div>
+    <div class="login-form-button">
+        <button mat-flat-button color="primary" (click)="login()"><span id="loginText">Login</span></button>
+    </div>
+</div>
+</div>

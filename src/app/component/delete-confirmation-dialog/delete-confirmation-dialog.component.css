@@ -1,0 +1,11 @@
+.confirm-container {
+    float: right;
+}
+
+.delete {
+    background-color: #DD3A3A;
+    color: white;
+}
+.create {
+    background: rgba(85, 195, 191, 1);
+}

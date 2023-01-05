@@ -22,7 +22,7 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-#
+
     - name: Node ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -35,7 +35,7 @@ jobs:
       run: npm run build
 
     - name: Generate deployment package
-      run: zip -r deploy.zip * -x "**node_modules**"
+      run: zip -r deploy.zip ./output/*
 
     - name: Get timestamp
       uses: gerred/actions/current-time@master

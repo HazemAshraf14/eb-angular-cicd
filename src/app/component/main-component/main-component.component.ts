@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../../service/authentication.service';
 
 
 @Component({
@@ -9,13 +10,24 @@ import { Router } from '@angular/router';
 })
 export class MainComponentComponent implements OnInit {
   
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+    private authenticationService: AuthenticationService) { }
 
   ngOnInit(): void {
+    this.showPatientsInfo();
   }
 
+  showPatientsInfo(){
+    this.router.navigate(['/patients-info']);
+  }
 
+  isLoggedIn() {
+    return this.authenticationService.isLoggedIn();
+  }
 
-
+  logoutClick() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
+  }
 
 }

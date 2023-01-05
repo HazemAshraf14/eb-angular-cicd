@@ -1,1 +1,12 @@
-<h1>Hello world v1</h1>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<div>
+    <div>
+        <div *ngIf="isLoggedIn()">
+            <div>
+                <img id="logoImg" src="assets/img/logo.png">
+            </div>
+        <button (click)="logoutClick()" mat-raised-button id="logoutBtn"><span>Logout</span></button>
+        </div>
+        <router-outlet> </router-outlet>
+    </div>
+</div>
