@@ -36,7 +36,9 @@ jobs:
       run: npm run build
 
     - name: Generate deployment package
-      run: zip -r deploy.zip ./output/dist ./output/Dockerfile ./output/Dockerrun.aws.json ./output/custom-nginx-file.conf
+      run: |
+        cd ./output
+        zip deploy.zip *
 
     - name: Upload zip file
       # We upload so we can re-use same jar in next job.
