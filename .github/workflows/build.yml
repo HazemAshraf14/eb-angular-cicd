@@ -40,6 +40,12 @@ jobs:
     #     cd ./output
     #     zip deploy.zip *
 
+    - name: Create SBOM step
+      uses: CycloneDX/gh-node-module-generatebom@v1
+      with:
+      path: './'
+      output: './bom_directory/test.app.bom.xml'
+
     - name: Install zip
       uses: montudor/action-zip@v1
 
